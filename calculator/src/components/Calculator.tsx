@@ -4,6 +4,7 @@ const Calculator = () => {
   const [numbers, setNumbers] = useState("");
 
   console.log(numbers.length);
+  console.log(numbers);
   return (
     <>
       <div className="card">
@@ -114,7 +115,8 @@ const Calculator = () => {
         <button
           onClick={() => {
             try {
-              setNumbers(eval(numbers));
+              const result = String(eval(numbers));
+              setNumbers(result);
             } catch (error) {
               console.error("inavlid expression", error);
             }
@@ -122,6 +124,12 @@ const Calculator = () => {
           className="btn btn-primary"
         >
           =
+        </button>
+        <button
+          onClick={() => setNumbers((sig) => sig + ".")}
+          className="btn btn-primary"
+        >
+          .
         </button>
       </div>
     </>
