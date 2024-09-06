@@ -10,6 +10,7 @@ const Calculator = () => {
       <div className="card">
         <div className="card-body">{numbers}</div>
       </div>
+
       <div>
         <button
           onClick={() => setNumbers((num) => num + "1")}
