@@ -7,12 +7,13 @@ const Calculator = () => {
   console.log(numbers);
   return (
     <>
-      <div className="mx-auto mt-20 bg-slate-400   rounded-md">
-        {/* display */}
-        <div className="span bg-blue-200 border-2 rounded-md h-8">
+      <div className=" flex flex-col   mt-20  bg-slate-400 rounded-md mx-auto max-w-fit">
+        {/* display div */}
+        <div className="flex flex-col  max-auto  m-2 span bg-blue-200 border-2 rounded-md h-8">
           {numbers}
         </div>
 
+        {/* buttons div */}
         <div>
           <button
             onClick={() => setNumbers((num) => num + "1")}
@@ -22,7 +23,7 @@ const Calculator = () => {
           </button>
           <button
             onClick={() => setNumbers((num) => num + "2")}
-            className=" border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
           >
             2
           </button>
