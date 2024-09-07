@@ -17,25 +17,25 @@ const Calculator = () => {
         <div>
           <button
             onClick={() => setNumbers((num) => num + "1")}
-            className="border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             1
           </button>
           <button
             onClick={() => setNumbers((num) => num + "2")}
-            className="border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             2
           </button>
           <button
             onClick={() => setNumbers((num) => num + "3")}
-            className=" border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             3
           </button>
           <button
             onClick={() => setNumbers((sig) => sig + "+")}
-            className=" border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             +
           </button>
@@ -43,25 +43,25 @@ const Calculator = () => {
         <div>
           <button
             onClick={() => setNumbers((num) => num + "4")}
-            className=" border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             4
           </button>
           <button
             onClick={() => setNumbers((num) => num + "5")}
-            className=" border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             5
           </button>
           <button
             onClick={() => setNumbers((num) => num + "6")}
-            className=" border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             6
           </button>
           <button
             onClick={() => setNumbers((sig) => sig + "-")}
-            className=" border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             -
           </button>
@@ -69,25 +69,25 @@ const Calculator = () => {
         <div>
           <button
             onClick={() => setNumbers((num) => num + "7")}
-            className=" border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             7
           </button>
           <button
             onClick={() => setNumbers((num) => num + "8")}
-            className=" border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             8
           </button>
           <button
             onClick={() => setNumbers((num) => num + "9")}
-            className=" border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             9
           </button>
           <button
             onClick={() => setNumbers((num) => num + "/")}
-            className=" border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             /
           </button>
@@ -95,25 +95,22 @@ const Calculator = () => {
         <div>
           <button
             onClick={() => setNumbers((num) => num + "0")}
-            className=" border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             0
           </button>
           <button
             onClick={() => setNumbers((num) => num + "*")}
-            className=" border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             *
           </button>
-          <button
-            onClick={() => setNumbers("")}
-            className=" border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
-          >
+          <button onClick={() => setNumbers("")} className="button">
             AC
           </button>
           <button
             onClick={() => setNumbers(numbers.slice(0, -1))}
-            className=" border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             c
           </button>
@@ -128,13 +125,13 @@ const Calculator = () => {
                 console.error("inavlid expression", error);
               }
             }}
-            className="border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             =
           </button>
           <button
             onClick={() => setNumbers((sig) => sig + ".")}
-            className="border-2  mt-2 m-2 rounded bg-gray-200 w-10 hover:bg-yellow-100"
+            className="button"
           >
             .
           </button>
