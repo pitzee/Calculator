@@ -7,9 +7,10 @@ const Calculator = () => {
   console.log(numbers);
   return (
     <>
-      <div className=" flex flex-col   mt-20  bg-slate-400 rounded-md mx-auto max-w-fit">
+      {/* main div */}
+      <div className=" flex flex-col mt-20  bg-slate-400 rounded-md mx-auto max-w-fit">
         {/* display div */}
-        <div className="flex flex-col  max-auto  m-2 span bg-blue-200 border-2 rounded-md h-10">
+        <div className="flex flex-col  max-auto  m-2 span bg-blue-200 border-2 rounded-md h-10 items-end">
           {numbers}
         </div>
         {/* buttons div */}
