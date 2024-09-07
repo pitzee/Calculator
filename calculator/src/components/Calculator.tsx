@@ -8,9 +8,9 @@ const Calculator = () => {
   return (
     <>
       {/* main div */}
-      <div className=" flex flex-col mt-20  bg-slate-400 rounded-md mx-auto max-w-fit">
+      <div className=" flex flex-col mt-20  bg-slate-400 rounded-md mx-auto max-w-fit border-2 border-black">
         {/* display div */}
-        <div className="flex flex-col  max-auto  m-2 span bg-blue-200 border-2 rounded-md h-10 items-end">
+        <div className="flex flex-col  max-auto  m-2 span bg-blue-200 border-2 rounded-md h-10 items-end  border-black">
           {numbers}
         </div>
 
