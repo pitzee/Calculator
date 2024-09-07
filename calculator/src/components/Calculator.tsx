@@ -13,6 +13,10 @@ const Calculator = () => {
         <div className="flex flex-col  max-auto  m-2 span bg-blue-200 border-2 rounded-md h-10 items-end">
           {numbers}
         </div>
+
+        {/* name div */}
+        <p className="flex text-black justify-end pr-2 font-bold">casio</p>
+
         {/* buttons div */}
         <div className="flex flex-col">
           <div>
